@@ -24,3 +24,10 @@ The output below shows my specific user account (`U01129692`) and an (`Idapclien
 
 
 ---
+
+## 3. Written Response
+
+**Question:** If I delete a user from this LDAP server, why is that better than deleting them from five individual computers?
+
+**Response:** Centralizing management on an LDAP server creates a single "source of truth." When a user is deleted from the server, their access is immediately and automatically revoked across all five connected computers. This is far more efficient than manual deletion and prevents security risks like "orphaned accounts" being left active on forgotten machines.
+
