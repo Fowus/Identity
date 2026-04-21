@@ -14,13 +14,13 @@
 ### Screenshot 1: Directory OUs
 The output below confirms the successful creation of the **People** and **Groups** Organizational Units.
 
-![LDAP Structure Output](../Identity/structure.png)
+![LDAP Structure Output](structure.png)
 
 ### Screenshot 2 and 3: User Verification
 The output below shows my specific user account (`U01129692`) and an (`Idapclient`) user account successfully added and searchable within the directory.
 
-![LDAP User Output](../Identity/user.png)
-![LDAP User Output](../Identity/user2.png)
+![LDAP User Output](user.png)
+![LDAP User Output](user2.png)
 
 
 ---
