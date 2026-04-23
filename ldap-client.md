@@ -89,3 +89,16 @@ result: 0 Success (numEntries: 7)
 ```
 ---
 
+## 4. Written Explanation
+ 
+A significant challenge occurred during the initial setup where the client and server were in separate VPCs, resulting in a complete network timeout (100% packet loss). To resolve this, the client instance was redeployed within the same VPC as the server (`coffee-shop-vpc`) and the AWS Security Group was modified to permit ingress traffic on Port 389. This experience highlights the value of centralized authentication: it allows for Single Sign-On (SSO) capabilities across an entire network, ensuring that security policies and user access can be managed from a central directory rather than requiring manual updates on every individual endpoint.
+ 
+---
+ 
+## 5. Sources
+ 
+- OpenLDAP Documentation — Referenced for base DN and schema definitions: https://www.openldap.org/doc/
+- AWS VPC Documentation — Utilized for troubleshooting Security Group ingress/egress and CIDR block overlaps: https://docs.aws.amazon.com/vpc/latest/userguide/
+- Ubuntu Server Guide — Referenced for `nslcd` and PAM module integration: https://documentation.ubuntu.com/server/
+ 
+- Google gemini referenced for command syntax and troubleshooting during lab setup
